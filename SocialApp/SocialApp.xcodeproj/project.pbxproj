@@ -12,26 +12,11 @@
 		C775B8A61CC644D400239322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C775B8A41CC644D400239322 /* Main.storyboard */; };
 		C775B8A81CC644D400239322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C775B8A71CC644D400239322 /* Assets.xcassets */; };
 		C775B8AB1CC644D400239322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C775B8A91CC644D400239322 /* LaunchScreen.storyboard */; };
-		C775B8B61CC644D500239322 /* SocialAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775B8B51CC644D500239322 /* SocialAppTests.swift */; };
-		C775B8C11CC644D500239322 /* SocialAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C775B8C01CC644D500239322 /* SocialAppUITests.swift */; };
+		C775B8D31CC6482300239322 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C775B8CF1CC6482300239322 /* Fabric.framework */; };
+		C775B8D41CC6482300239322 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C775B8D01CC6482300239322 /* TwitterKit.framework */; };
+		C775B8D51CC6482300239322 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C775B8D11CC6482300239322 /* TwitterKitResources.bundle */; };
+		C775B8D61CC6482300239322 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C775B8D21CC6482300239322 /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C775B8B21CC644D500239322 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775B8951CC644D400239322 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C775B89C1CC644D400239322;
-			remoteInfo = SocialApp;
-		};
-		C775B8BD1CC644D500239322 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C775B8951CC644D400239322 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C775B89C1CC644D400239322;
-			remoteInfo = SocialApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C775B89D1CC644D400239322 /* SocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,12 +26,14 @@
 		C775B8A71CC644D400239322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C775B8AA1CC644D400239322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C775B8AC1CC644D400239322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C775B8B11CC644D500239322 /* SocialAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C775B8B51CC644D500239322 /* SocialAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAppTests.swift; sourceTree = "<group>"; };
 		C775B8B71CC644D500239322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C775B8BC1CC644D500239322 /* SocialAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C775B8C01CC644D500239322 /* SocialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAppUITests.swift; sourceTree = "<group>"; };
 		C775B8C21CC644D500239322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C775B8CF1CC6482300239322 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		C775B8D01CC6482300239322 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		C775B8D11CC6482300239322 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		C775B8D21CC6482300239322 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,20 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C775B8AE1CC644D500239322 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C775B8B91CC644D500239322 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C775B8D31CC6482300239322 /* Fabric.framework in Frameworks */,
+				C775B8D61CC6482300239322 /* TwitterCore.framework in Frameworks */,
+				C775B8D41CC6482300239322 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				C775B89D1CC644D400239322 /* SocialApp.app */,
-				C775B8B11CC644D500239322 /* SocialAppTests.xctest */,
-				C775B8BC1CC644D500239322 /* SocialAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +77,10 @@
 				C775B8A71CC644D400239322 /* Assets.xcassets */,
 				C775B8A91CC644D400239322 /* LaunchScreen.storyboard */,
 				C775B8AC1CC644D400239322 /* Info.plist */,
+				C775B8CF1CC6482300239322 /* Fabric.framework */,
+				C775B8D01CC6482300239322 /* TwitterKit.framework */,
+				C775B8D11CC6482300239322 /* TwitterKitResources.bundle */,
+				C775B8D21CC6482300239322 /* TwitterCore.framework */,
 			);
 			path = SocialApp;
 			sourceTree = "<group>";
@@ -135,6 +113,7 @@
 				C775B8991CC644D400239322 /* Sources */,
 				C775B89A1CC644D400239322 /* Frameworks */,
 				C775B89B1CC644D400239322 /* Resources */,
+				C775B8CE1CC647E000239322 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -144,42 +123,6 @@
 			productName = SocialApp;
 			productReference = C775B89D1CC644D400239322 /* SocialApp.app */;
 			productType = "com.apple.product-type.application";
-		};
-		C775B8B01CC644D500239322 /* SocialAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C775B8C81CC644D500239322 /* Build configuration list for PBXNativeTarget "SocialAppTests" */;
-			buildPhases = (
-				C775B8AD1CC644D500239322 /* Sources */,
-				C775B8AE1CC644D500239322 /* Frameworks */,
-				C775B8AF1CC644D500239322 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C775B8B31CC644D500239322 /* PBXTargetDependency */,
-			);
-			name = SocialAppTests;
-			productName = SocialAppTests;
-			productReference = C775B8B11CC644D500239322 /* SocialAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C775B8BB1CC644D500239322 /* SocialAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C775B8CB1CC644D500239322 /* Build configuration list for PBXNativeTarget "SocialAppUITests" */;
-			buildPhases = (
-				C775B8B81CC644D500239322 /* Sources */,
-				C775B8B91CC644D500239322 /* Frameworks */,
-				C775B8BA1CC644D500239322 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C775B8BE1CC644D500239322 /* PBXTargetDependency */,
-			);
-			name = SocialAppUITests;
-			productName = SocialAppUITests;
-			productReference = C775B8BC1CC644D500239322 /* SocialAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -193,14 +136,6 @@
 				TargetAttributes = {
 					C775B89C1CC644D400239322 = {
 						CreatedOnToolsVersion = 7.2;
-					};
-					C775B8B01CC644D500239322 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = C775B89C1CC644D400239322;
-					};
-					C775B8BB1CC644D500239322 = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = C775B89C1CC644D400239322;
 					};
 				};
 			};
@@ -218,8 +153,6 @@
 			projectRoot = "";
 			targets = (
 				C775B89C1CC644D400239322 /* SocialApp */,
-				C775B8B01CC644D500239322 /* SocialAppTests */,
-				C775B8BB1CC644D500239322 /* SocialAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,27 +162,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C775B8D51CC6482300239322 /* TwitterKitResources.bundle in Resources */,
 				C775B8AB1CC644D400239322 /* LaunchScreen.storyboard in Resources */,
 				C775B8A81CC644D400239322 /* Assets.xcassets in Resources */,
 				C775B8A61CC644D400239322 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C775B8AF1CC644D500239322 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C775B8BA1CC644D500239322 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C775B8CE1CC647E000239322 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 489496958e88aa992e4b2bab13a40fc4a2b1ab01 c6e17836210c5c93d645ff62c84bc96ce3dc11c8dd1697bd6d37d289f2299655";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C775B8991CC644D400239322 /* Sources */ = {
@@ -261,36 +197,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C775B8AD1CC644D500239322 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C775B8B61CC644D500239322 /* SocialAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C775B8B81CC644D500239322 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C775B8C11CC644D500239322 /* SocialAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C775B8B31CC644D500239322 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C775B89C1CC644D400239322 /* SocialApp */;
-			targetProxy = C775B8B21CC644D500239322 /* PBXContainerItemProxy */;
-		};
-		C775B8BE1CC644D500239322 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C775B89C1CC644D400239322 /* SocialApp */;
-			targetProxy = C775B8BD1CC644D500239322 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C775B8A41CC644D400239322 /* Main.storyboard */ = {
@@ -399,6 +306,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialApp",
+				);
 				INFOPLIST_FILE = SocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liftoffllc.SocialApp;
@@ -410,58 +321,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialApp",
+				);
 				INFOPLIST_FILE = SocialApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liftoffllc.SocialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		C775B8C91CC644D500239322 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SocialAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.liftoffllc.SocialAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialApp.app/SocialApp";
-			};
-			name = Debug;
-		};
-		C775B8CA1CC644D500239322 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SocialAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.liftoffllc.SocialAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialApp.app/SocialApp";
-			};
-			name = Release;
-		};
-		C775B8CC1CC644D500239322 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SocialAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.liftoffllc.SocialAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SocialApp;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		C775B8CD1CC644D500239322 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SocialAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.liftoffllc.SocialAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SocialApp;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -482,22 +349,6 @@
 			buildConfigurations = (
 				C775B8C61CC644D500239322 /* Debug */,
 				C775B8C71CC644D500239322 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C775B8C81CC644D500239322 /* Build configuration list for PBXNativeTarget "SocialAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C775B8C91CC644D500239322 /* Debug */,
-				C775B8CA1CC644D500239322 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C775B8CB1CC644D500239322 /* Build configuration list for PBXNativeTarget "SocialAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C775B8CC1CC644D500239322 /* Debug */,
-				C775B8CD1CC644D500239322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
