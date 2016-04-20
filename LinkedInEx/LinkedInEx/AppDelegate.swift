@@ -1,25 +1,21 @@
 //
 //  AppDelegate.swift
-//  SocialAPPLogin
+//  LinkedInEx
 //
 //  Created by Trupti on 4/20/16.
 //  Copyright © 2016 LiftOff LLC. All rights reserved.
 //
 
 import UIKit
-import Fabric
-import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        Fabric.with([Twitter.self])
 
-//        if LISDKCallbackHandler.shouldHandleUrl(url) {
-//            return LISDKCallbackHandler.application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
-//        }
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
         return true
     }
 

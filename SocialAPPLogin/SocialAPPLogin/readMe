@@ -1,0 +1,52 @@
+
+Steps for linkedin :
+app ID --->  4876851
+
+
+
+
+<key>LIAppId</key>
+<string>{Your LinkedIn app ID}</string>
+<key>CFBundleURLTypes</key>
+<array>
+<dict>
+<key>CFBundleURLSchemes</key>
+<array>
+<string>li{Your LinkedIn app ID}</string>
+</array>
+</dict>
+</array>
+
+
+
+
+for supporting ios9:
+
+<key>LSApplicationQueriesSchemes</key>
+<array>
+<string>linkedin</string>
+<string>linkedin-sdk2</string>
+<string>linkedin-sdk</string>
+</array>
+
+
+
+
+The following configuration whitelists HTTP calls to *.linkedin.com servers:
+
+<key>NSAppTransportSecurity</key>
+<dict>
+<key>NSExceptionDomains</key>
+<dict>
+<key>linkedin.com</key>
+<dict>
+<key>NSExceptionAllowsInsecureHTTPLoads</key>
+<true/>
+<key>NSIncludesSubdomains</key>
+<true/>
+<key>NSExceptionRequiresForwardSecrecy</key>
+<false/>
+</dict>
+</dict>
+</dict
+

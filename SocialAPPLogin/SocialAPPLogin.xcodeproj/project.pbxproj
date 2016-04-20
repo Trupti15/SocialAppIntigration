@@ -16,6 +16,9 @@
 		C7C884171CC7346900865C2B /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C884131CC7346900865C2B /* TwitterKit.framework */; };
 		C7C884181CC7346900865C2B /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C7C884141CC7346900865C2B /* TwitterKitResources.bundle */; };
 		C7C884191CC7346900865C2B /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C884151CC7346900865C2B /* TwitterCore.framework */; };
+		C7CB20A81CC76A9800620A94 /* readMe in Resources */ = {isa = PBXBuildFile; fileRef = C7CB20A71CC76A9800620A94 /* readMe */; };
+		C7CB20B61CC771A100620A94 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CB20B51CC771A100620A94 /* linkedin-sdk.framework */; };
+		C7CB20BE1CC775EE00620A94 /* dd.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CB20BD1CC775EE00620A94 /* dd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,11 @@
 		C7C884131CC7346900865C2B /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		C7C884141CC7346900865C2B /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
 		C7C884151CC7346900865C2B /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		C7CB20A71CC76A9800620A94 /* readMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readMe; sourceTree = "<group>"; };
+		C7CB20AB1CC76CE500620A94 /* SocialAPPLogin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialAPPLogin-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7CB20B51CC771A100620A94 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
+		C7CB20BC1CC775EE00620A94 /* dd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd.h; sourceTree = "<group>"; };
+		C7CB20BD1CC775EE00620A94 /* dd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 				C7C884161CC7346900865C2B /* Fabric.framework in Frameworks */,
 				C7C884191CC7346900865C2B /* TwitterCore.framework in Frameworks */,
 				C7C884171CC7346900865C2B /* TwitterKit.framework in Frameworks */,
+				C7CB20B61CC771A100620A94 /* linkedin-sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +80,7 @@
 		C7C883E11CC7338E00865C2B /* SocialAPPLogin */ = {
 			isa = PBXGroup;
 			children = (
+				C7CB20B51CC771A100620A94 /* linkedin-sdk.framework */,
 				C7C884101CC7341400865C2B /* Framework */,
 				C7C883E21CC7338E00865C2B /* AppDelegate.swift */,
 				C7C883E41CC7338E00865C2B /* ViewController.swift */,
@@ -78,6 +88,10 @@
 				C7C883E91CC7338E00865C2B /* Assets.xcassets */,
 				C7C883EB1CC7338E00865C2B /* LaunchScreen.storyboard */,
 				C7C883EE1CC7338E00865C2B /* Info.plist */,
+				C7CB20A71CC76A9800620A94 /* readMe */,
+				C7CB20AB1CC76CE500620A94 /* SocialAPPLogin-Bridging-Header.h */,
+				C7CB20BC1CC775EE00620A94 /* dd.h */,
+				C7CB20BD1CC775EE00620A94 /* dd.m */,
 			);
 			path = SocialAPPLogin;
 			sourceTree = "<group>";
@@ -170,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CB20A81CC76A9800620A94 /* readMe in Resources */,
 				C7C884181CC7346900865C2B /* TwitterKitResources.bundle in Resources */,
 				C7C883ED1CC7338E00865C2B /* LaunchScreen.storyboard in Resources */,
 				C7C883EA1CC7338E00865C2B /* Assets.xcassets in Resources */,
@@ -200,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CB20BE1CC775EE00620A94 /* dd.m in Sources */,
 				C7C883E51CC7338E00865C2B /* ViewController.swift in Sources */,
 				C7C883E31CC7338E00865C2B /* AppDelegate.swift in Sources */,
 			);
@@ -314,14 +330,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialAPPLogin",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SocialAPPLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liftoffllc.SocialAPPLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialAPPLogin/SocialAPPLogin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -329,14 +354,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialAPPLogin",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SocialAPPLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liftoffllc.SocialAPPLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialAPPLogin/SocialAPPLogin-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -359,6 +387,7 @@
 				C7C884091CC7338F00865C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -94,6 +94,18 @@ class ViewController: UIViewController {
 //<------------------------------------ Facebook
     @IBAction func loginLinkedIn(sender: UIButton) {
 
+//        var url = NSString(string:"https://api.linkedin.com/v1/people/~")
+//
+//        if LISDKSessionManager.hasValidSession {
+//            LISDKAPIHelper.sharedInstance().getRequest(url, success: {
+//                response in
+//                //Do something with the response
+//                }, error: {
+//                    error in
+//                    //Do something with the error
+//            })
+//        }
+
     }
 
     @IBAction func logOutLinkedIn(sender: UIButton) {
