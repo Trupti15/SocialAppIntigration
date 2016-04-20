@@ -16,7 +16,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         Helper().connectToLinkedIn(redirectUrl, clientSecret: clientSecret, redirectUrl: redirectUrl, state: state) { (dict) -> Void in
             print(dict)
 

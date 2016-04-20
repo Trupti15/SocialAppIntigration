@@ -14,4 +14,5 @@
 //-(void)connectToLinkedIn:(NSString *)clientId  clientSecret:(NSString *)clientSecret redirectUrl:(NSString*)redirectUrl state:(NSString *)state;
 -(void)connectToLinkedIn:(NSString *)clientId  clientSecret:(NSString *)clientSecret redirectUrl:(NSString*)redirectUrl state:(NSString *)state userInfo:(void (^)(NSDictionary*))userDict;
 
+- (BOOL)isLinkedInAccessTokenValid ;
 @end

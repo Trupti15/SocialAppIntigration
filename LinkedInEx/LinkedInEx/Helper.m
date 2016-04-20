@@ -18,6 +18,10 @@
     [linkedIn logout];
 }
 
+- (BOOL)isLinkedInAccessTokenValid {
+    return [LinkedInHelper sharedInstance].isValidToken;
+}
+
 //- (IBAction)btnConnectTapped:(UIButton *)sender {
 -(void)connectToLinkedIn:(NSString *)clientId  clientSecret:(NSString *)clientSecret redirectUrl:(NSString*)redirectUrl state:(NSString *)state userInfo:(void (^)(NSDictionary*))userDict{
     LinkedInHelper *linkedIn = [LinkedInHelper sharedInstance];

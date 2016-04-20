@@ -18,7 +18,6 @@
 		C7C884191CC7346900865C2B /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C884151CC7346900865C2B /* TwitterCore.framework */; };
 		C7CB20A81CC76A9800620A94 /* readMe in Resources */ = {isa = PBXBuildFile; fileRef = C7CB20A71CC76A9800620A94 /* readMe */; };
 		C7CB20B61CC771A100620A94 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CB20B51CC771A100620A94 /* linkedin-sdk.framework */; };
-		C7CB20BE1CC775EE00620A94 /* dd.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CB20BD1CC775EE00620A94 /* dd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +39,6 @@
 		C7CB20A71CC76A9800620A94 /* readMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readMe; sourceTree = "<group>"; };
 		C7CB20AB1CC76CE500620A94 /* SocialAPPLogin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialAPPLogin-Bridging-Header.h"; sourceTree = "<group>"; };
 		C7CB20B51CC771A100620A94 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
-		C7CB20BC1CC775EE00620A94 /* dd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dd.h; sourceTree = "<group>"; };
-		C7CB20BD1CC775EE00620A94 /* dd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +87,6 @@
 				C7C883EE1CC7338E00865C2B /* Info.plist */,
 				C7CB20A71CC76A9800620A94 /* readMe */,
 				C7CB20AB1CC76CE500620A94 /* SocialAPPLogin-Bridging-Header.h */,
-				C7CB20BC1CC775EE00620A94 /* dd.h */,
-				C7CB20BD1CC775EE00620A94 /* dd.m */,
 			);
 			path = SocialAPPLogin;
 			sourceTree = "<group>";
@@ -215,7 +210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7CB20BE1CC775EE00620A94 /* dd.m in Sources */,
 				C7C883E51CC7338E00865C2B /* ViewController.swift in Sources */,
 				C7C883E31CC7338E00865C2B /* AppDelegate.swift in Sources */,
 			);
