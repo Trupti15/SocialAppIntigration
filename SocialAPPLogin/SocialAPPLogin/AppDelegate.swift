@@ -1,34 +1,21 @@
 //
 //  AppDelegate.swift
-//  SocialApp
+//  SocialAPPLogin
 //
-//  Created by Trupti on 4/19/16.
+//  Created by Trupti on 4/20/16.
 //  Copyright © 2016 LiftOff LLC. All rights reserved.
 //
 
 import UIKit
-
 import Fabric
 import TwitterKit
 
-
-let  kTwitterConsumerKey = "3oDBy5bZxOWKEKSZggBrP9TPn"
-let  kTwitterConsumerSecret = "HCjWBW4iZgAdpzYX5C0fYbIslL164Taw3aiBUGZ9t1QlZPxAUa"
-
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
-        //twitter intigration
-//        Fabric.with([Twitter.self])
-//
-//        Twitter.sharedInstance().startWithConsumerKey(kTwitterConsumerKey, consumerSecret: kTwitterConsumerSecret)
-
+        Fabric.with([Twitter.self])
         return true
     }
 

@@ -12,10 +12,6 @@
 		C775B8A61CC644D400239322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C775B8A41CC644D400239322 /* Main.storyboard */; };
 		C775B8A81CC644D400239322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C775B8A71CC644D400239322 /* Assets.xcassets */; };
 		C775B8AB1CC644D400239322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C775B8A91CC644D400239322 /* LaunchScreen.storyboard */; };
-		C775B8D31CC6482300239322 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C775B8CF1CC6482300239322 /* Fabric.framework */; };
-		C775B8D41CC6482300239322 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C775B8D01CC6482300239322 /* TwitterKit.framework */; };
-		C775B8D51CC6482300239322 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C775B8D11CC6482300239322 /* TwitterKitResources.bundle */; };
-		C775B8D61CC6482300239322 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C775B8D21CC6482300239322 /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +26,6 @@
 		C775B8B71CC644D500239322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C775B8C01CC644D500239322 /* SocialAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAppUITests.swift; sourceTree = "<group>"; };
 		C775B8C21CC644D500239322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C775B8CF1CC6482300239322 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		C775B8D01CC6482300239322 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		C775B8D11CC6482300239322 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
-		C775B8D21CC6482300239322 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,9 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C775B8D31CC6482300239322 /* Fabric.framework in Frameworks */,
-				C775B8D61CC6482300239322 /* TwitterCore.framework in Frameworks */,
-				C775B8D41CC6482300239322 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +66,6 @@
 				C775B8A71CC644D400239322 /* Assets.xcassets */,
 				C775B8A91CC644D400239322 /* LaunchScreen.storyboard */,
 				C775B8AC1CC644D400239322 /* Info.plist */,
-				C775B8CF1CC6482300239322 /* Fabric.framework */,
-				C775B8D01CC6482300239322 /* TwitterKit.framework */,
-				C775B8D11CC6482300239322 /* TwitterKitResources.bundle */,
-				C775B8D21CC6482300239322 /* TwitterCore.framework */,
 			);
 			path = SocialApp;
 			sourceTree = "<group>";
@@ -162,7 +147,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C775B8D51CC6482300239322 /* TwitterKitResources.bundle in Resources */,
 				C775B8AB1CC644D400239322 /* LaunchScreen.storyboard in Resources */,
 				C775B8A81CC644D400239322 /* Assets.xcassets in Resources */,
 				C775B8A61CC644D400239322 /* Main.storyboard in Resources */,
@@ -351,6 +335,7 @@
 				C775B8C71CC644D500239322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
