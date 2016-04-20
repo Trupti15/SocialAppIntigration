@@ -6,13 +6,13 @@ app ID --->  4876851
 
 
 <key>LIAppId</key>
-<string>{Your LinkedIn app ID}</string>
+<string>4876851</string>
 <key>CFBundleURLTypes</key>
 <array>
 <dict>
 <key>CFBundleURLSchemes</key>
 <array>
-<string>li{Your LinkedIn app ID}</string>
+<string>li4876851</string>
 </array>
 </dict>
 </array>

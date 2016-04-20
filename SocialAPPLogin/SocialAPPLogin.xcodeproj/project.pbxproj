@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C79999EB1CC79798008901F7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79999E81CC79798008901F7 /* FBSDKCoreKit.framework */; };
+		C79999EC1CC79798008901F7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79999E91CC79798008901F7 /* FBSDKLoginKit.framework */; };
+		C79999ED1CC79798008901F7 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79999EA1CC79798008901F7 /* FBSDKShareKit.framework */; };
 		C7C883E31CC7338E00865C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C883E21CC7338E00865C2B /* AppDelegate.swift */; };
 		C7C883E51CC7338E00865C2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C883E41CC7338E00865C2B /* ViewController.swift */; };
 		C7C883E81CC7338E00865C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7C883E61CC7338E00865C2B /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C79999E81CC79798008901F7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		C79999E91CC79798008901F7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		C79999EA1CC79798008901F7 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		C7C883DF1CC7338E00865C2B /* SocialAPPLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialAPPLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C883E21CC7338E00865C2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7C883E41CC7338E00865C2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +52,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79999EB1CC79798008901F7 /* FBSDKCoreKit.framework in Frameworks */,
 				C7C884161CC7346900865C2B /* Fabric.framework in Frameworks */,
+				C79999EC1CC79798008901F7 /* FBSDKLoginKit.framework in Frameworks */,
+				C79999ED1CC79798008901F7 /* FBSDKShareKit.framework in Frameworks */,
 				C7C884191CC7346900865C2B /* TwitterCore.framework in Frameworks */,
 				C7C884171CC7346900865C2B /* TwitterKit.framework in Frameworks */,
 				C7CB20B61CC771A100620A94 /* linkedin-sdk.framework in Frameworks */,
@@ -77,7 +86,6 @@
 		C7C883E11CC7338E00865C2B /* SocialAPPLogin */ = {
 			isa = PBXGroup;
 			children = (
-				C7CB20B51CC771A100620A94 /* linkedin-sdk.framework */,
 				C7C884101CC7341400865C2B /* Framework */,
 				C7C883E21CC7338E00865C2B /* AppDelegate.swift */,
 				C7C883E41CC7338E00865C2B /* ViewController.swift */,
@@ -112,6 +120,10 @@
 		C7C884101CC7341400865C2B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				C79999E81CC79798008901F7 /* FBSDKCoreKit.framework */,
+				C79999E91CC79798008901F7 /* FBSDKLoginKit.framework */,
+				C79999EA1CC79798008901F7 /* FBSDKShareKit.framework */,
+				C7CB20B51CC771A100620A94 /* linkedin-sdk.framework */,
 				C7C884121CC7346900865C2B /* Fabric.framework */,
 				C7C884131CC7346900865C2B /* TwitterKit.framework */,
 				C7C884141CC7346900865C2B /* TwitterKitResources.bundle */,

@@ -60,7 +60,7 @@
         [linkedIn requestMeWithSenderViewController:self
                                            clientId:clientId
                                        clientSecret:clientSecret
-                                        redirectUrl:redirectUrl
+                                        redirectUrl:@"www.liftoffllc.com"
                                         permissions:permissions
                                               state:state
                                     successUserInfo:^(NSDictionary *userInfo) {

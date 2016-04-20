@@ -8,8 +8,11 @@
 
 import UIKit
 import TwitterKit
-class ViewController: UIViewController {
+import FBSDKLoginKit
+import FBSDKCoreKit
 
+class ViewController: UIViewController {
+    @IBOutlet weak var fbLoginBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         /*
@@ -72,8 +75,23 @@ class ViewController: UIViewController {
 
 //<------------------------------------ Facebook
     @IBAction func loginFacebook(sender: UIButton) {
+        let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
+
+        fbLoginManager.logInWithReadPermissions(["email"], fromViewController: self) { (result, error) -> Void in
+            if (error == nil){
+                let fbloginresult : FBSDKLoginManagerLoginResult = result
+                if fbloginresult.grantedPermissions != nil {
+                    if(fbloginresult.grantedPermissions.contains("email")) {
+                        self.getFBUserData()
+                        fbLoginManager.logOut()
+                    }
+                }
+            }
+        }
 
     }
+
+
     @IBAction func logOutFacebook(sender: UIButton) {
 
     }
@@ -81,7 +99,36 @@ class ViewController: UIViewController {
 
 
 
+
+    func getFBUserData (){
+        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"id,interested_in,gender,birthday,email,age_range,name,picture.width(100).height(100)"])
+        graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
+
+            if ((error) != nil)
+            {
+                // Process error
+                print("Error: \(error)")
+            }
+            else
+            {
+                print("fetched user: \(result)")
+                let id : NSString = result.valueForKey("id") as! String
+                print("User ID is: \(id)")
+            }
+        })
+    }
+
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+
+    }
+
+
     //<------------------------------------ Facebook
+
+
+
+
+
     @IBAction func loginGplus(sender: UIButton) {
 
     }

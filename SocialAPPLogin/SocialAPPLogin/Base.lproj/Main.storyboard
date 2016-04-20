@@ -28,16 +28,6 @@
                                     <action selector="loginTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmX-SF-OX4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOJ-KB-s8J">
-                                <rect key="frame" x="22" y="153" width="128" height="38"/>
-                                <color key="backgroundColor" red="0.55592105260000002" green="0.77960526320000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Facebook Login">
-                                    <color key="titleColor" red="0.96381578950000002" green="0.069078947370000005" blue="0.2335526316" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z3L-fG-K3j"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIW-fb-Jsa">
                                 <rect key="frame" x="22" y="241" width="128" height="38"/>
                                 <color key="backgroundColor" red="0.55592105260000002" green="0.77960526320000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,6 +58,16 @@
                                     <action selector="loginLinkedIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VfX-52-u4h"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOJ-KB-s8J">
+                                <rect key="frame" x="20" y="158" width="128" height="38"/>
+                                <color key="backgroundColor" red="0.55592105260000002" green="0.77960526320000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Facebook Login">
+                                    <color key="titleColor" red="0.96381578950000002" green="0.069078947370000005" blue="0.2335526316" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z3L-fG-K3j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -91,6 +91,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="fbLoginBtn" destination="OOJ-KB-s8J" id="yqe-6I-qIS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
