@@ -96,10 +96,6 @@ class ViewController: UIViewController {
 
     }
 
-
-
-
-
     func getFBUserData (){
         let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"id,interested_in,gender,birthday,email,age_range,name,picture.width(100).height(100)"])
         graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
@@ -118,10 +114,6 @@ class ViewController: UIViewController {
         })
     }
 
-    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-
-    }
-
 
     //<------------------------------------ Facebook
 
@@ -136,22 +128,30 @@ class ViewController: UIViewController {
 
     }
 
-
-
-//<------------------------------------ Facebook
+    //<------------------------------------ LinkedIn
     @IBAction func loginLinkedIn(sender: UIButton) {
+        LISDKSessionManager.createSessionWithAuth([LISDK_BASIC_PROFILE_PERMISSION], state: nil, showGoToAppStoreDialog: true, successBlock: { (returnState) -> Void in
+            print("success called!")
 
-//        var url = NSString(string:"https://api.linkedin.com/v1/people/~")
-//
-//        if LISDKSessionManager.hasValidSession {
-//            LISDKAPIHelper.sharedInstance().getRequest(url, success: {
-//                response in
-//                //Do something with the response
-//                }, error: {
-//                    error in
-//                    //Do something with the error
-//            })
-//        }
+            //let session = LISDKSessionManager.sharedInstance().session
+
+            let url = "https://api.linkedin.com/v1/people/~"
+
+            if LISDKSessionManager.hasValidSession() {
+                LISDKAPIHelper.sharedInstance().getRequest(url, success: { (response) -> Void in
+                    print(response)
+                    //"{\n  \"firstName\": \"Josh\",\n  \"headline\": \"Senior Mobile Engineer at A+E Networks\",\n  ... }"
+
+
+                    }, error: { (error) -> Void in
+                        print(error)
+                })
+            }
+
+            }) { (error) -> Void in
+                print("Error: \(error)")
+        }
+
 
     }
 
