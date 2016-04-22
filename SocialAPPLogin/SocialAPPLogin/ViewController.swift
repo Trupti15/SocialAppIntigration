@@ -7,156 +7,74 @@
 //
 
 import UIKit
-import TwitterKit
-import FBSDKLoginKit
-import FBSDKCoreKit
+
+extension String {
+    init(sep:String, _ lines:String...){
+        self = ""
+        for (idx, item) in lines.enumerate() {
+            self += "\(item)"
+            if idx < lines.count-1 {
+                self += sep
+            }
+        }
+    }
+
+    init(_ lines:String...){
+        self = ""
+        for (idx, item) in lines.enumerate() {
+            self += "\(item)"
+            if idx < lines.count-1 {
+                self += "\n"
+            }
+        }
+    }
+}
+
+
 
 class ViewController: UIViewController {
     @IBOutlet weak var fbLoginBtn: UIButton!
+    @IBOutlet weak var responseLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
-            Callback for login success or failure.
-            The TWTRSession is also available on the [Twitter sharedInstance] singleton.
-            Here we pop an alert just to give an example of how to read Twitter user info out of a TWTRSession.*/
-//        let logInButton = TWTRLogInButton { (session, error) in
-//            if let unwrappedSession = session {
-//                print(unwrappedSession.userName)
-//            }
-//        }
-//        logInButton.center = self.view.center
-//        self.view.addSubview(logInButton)
     }
 
     //<------------------------------------ Twitter
 
     @IBAction func loginTwitter(sender: UIButton) {
-        Twitter.sharedInstance().logInWithMethods([.All]) { twitterSession, error in
-            if let session = twitterSession {
-                print(session.userID)
-                print(session.userName)
-                print(session.authToken)
-                print(session.authTokenSecret)
-            }
-            //for email request
-            let client = TWTRAPIClient.clientWithCurrentUser()
-            let request = client.URLRequestWithMethod("GET",
-                URL: "https://api.twitter.com/1.1/account/verify_credentials.json",
-                parameters: ["include_email": "true", "skip_status": "true"],
-                error: nil)
-            client.sendTwitterRequest(request) { response, data, connectionError in
-                //                print(response)
-                //                print(request)
-            }
-        }
-        /* can fetch more then one session
-        let store = Twitter.sharedInstance().sessionStore
-        let lastSession = store.session
-        let sessions = store.existingUserSessions()
-
-        //get session from userID
-        let specificSession = store.sessionForUserID("123")
-        */
-
+        loginTwitter()
     }
     
 
     @IBAction func logOutTwitter(sender: UIButton) {
-        if let store = Twitter.sharedInstance().sessionStore as TWTRSessionStore?{
-            if let session = store.session(){
-                if let userID = session.userID as String?{
-                    store.logOutUserID(userID)
-                }
-            }
-        }
-      }
-
-
-
-//<------------------------------------ Facebook
-    @IBAction func loginFacebook(sender: UIButton) {
-        let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
-
-        fbLoginManager.logInWithReadPermissions(["email"], fromViewController: self) { (result, error) -> Void in
-            if (error == nil){
-                let fbloginresult : FBSDKLoginManagerLoginResult = result
-                if fbloginresult.grantedPermissions != nil {
-                    if(fbloginresult.grantedPermissions.contains("email")) {
-                        self.getFBUserData()
-                        fbLoginManager.logOut()
-                    }
-                }
-            }
-        }
-
+        logOutTwitter()
     }
 
+
+
+    @IBAction func loginFacebook(sender: UIButton) {
+        loginFacebook()
+    }
 
     @IBAction func logOutFacebook(sender: UIButton) {
-
+        logOutFacebook()
     }
-
-    func getFBUserData (){
-        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"id,interested_in,gender,birthday,email,age_range,name,picture.width(100).height(100)"])
-        graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
-
-            if ((error) != nil)
-            {
-                // Process error
-                print("Error: \(error)")
-            }
-            else
-            {
-                print("fetched user: \(result)")
-                let id : NSString = result.valueForKey("id") as! String
-                print("User ID is: \(id)")
-            }
-        })
-    }
-
-
-    //<------------------------------------ Facebook
-
-
-
-
 
     @IBAction func loginGplus(sender: UIButton) {
 
     }
+
     @IBAction func logOutGplus(sender: UIButton) {
 
     }
 
-    //<------------------------------------ LinkedIn
     @IBAction func loginLinkedIn(sender: UIButton) {
-        LISDKSessionManager.createSessionWithAuth([LISDK_BASIC_PROFILE_PERMISSION], state: nil, showGoToAppStoreDialog: true, successBlock: { (returnState) -> Void in
-            print("success called!")
-
-            //let session = LISDKSessionManager.sharedInstance().session
-
-            let url = "https://api.linkedin.com/v1/people/~"
-
-            if LISDKSessionManager.hasValidSession() {
-                LISDKAPIHelper.sharedInstance().getRequest(url, success: { (response) -> Void in
-                    print(response)
-                    //"{\n  \"firstName\": \"Josh\",\n  \"headline\": \"Senior Mobile Engineer at A+E Networks\",\n  ... }"
-
-
-                    }, error: { (error) -> Void in
-                        print(error)
-                })
-            }
-
-            }) { (error) -> Void in
-                print("Error: \(error)")
-        }
-
-
+        createSession()
     }
 
     @IBAction func logOutLinkedIn(sender: UIButton) {
-
+        clearSession()
     }
 
 

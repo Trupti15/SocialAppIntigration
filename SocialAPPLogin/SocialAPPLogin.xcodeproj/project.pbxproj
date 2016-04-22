@@ -21,6 +21,10 @@
 		C7C884181CC7346900865C2B /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C7C884141CC7346900865C2B /* TwitterKitResources.bundle */; };
 		C7C884191CC7346900865C2B /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C884151CC7346900865C2B /* TwitterCore.framework */; };
 		C7CB20A81CC76A9800620A94 /* readMe in Resources */ = {isa = PBXBuildFile; fileRef = C7CB20A71CC76A9800620A94 /* readMe */; };
+		C7DD3FF61CCA0443008BA09F /* Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD3FF51CCA0443008BA09F /* Facebook.swift */; };
+		C7DD3FF81CCA044E008BA09F /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD3FF71CCA044E008BA09F /* Twitter.swift */; };
+		C7DD3FFA1CCA0455008BA09F /* Gplus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD3FF91CCA0455008BA09F /* Gplus.swift */; };
+		C7DD3FFC1CCA045D008BA09F /* LinkedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD3FFB1CCA045D008BA09F /* LinkedIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,10 @@
 		C7C884151CC7346900865C2B /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		C7CB20A71CC76A9800620A94 /* readMe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readMe; sourceTree = "<group>"; };
 		C7CB20AB1CC76CE500620A94 /* SocialAPPLogin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialAPPLogin-Bridging-Header.h"; sourceTree = "<group>"; };
+		C7DD3FF51CCA0443008BA09F /* Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facebook.swift; sourceTree = "<group>"; };
+		C7DD3FF71CCA044E008BA09F /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
+		C7DD3FF91CCA0455008BA09F /* Gplus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gplus.swift; sourceTree = "<group>"; };
+		C7DD3FFB1CCA045D008BA09F /* LinkedIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,10 @@
 				C7C884101CC7341400865C2B /* Framework */,
 				C7C883E21CC7338E00865C2B /* AppDelegate.swift */,
 				C7C883E41CC7338E00865C2B /* ViewController.swift */,
+				C7DD3FF71CCA044E008BA09F /* Twitter.swift */,
+				C7DD3FF91CCA0455008BA09F /* Gplus.swift */,
+				C7DD3FFB1CCA045D008BA09F /* LinkedIn.swift */,
+				C7DD3FF51CCA0443008BA09F /* Facebook.swift */,
 				C7C883E61CC7338E00865C2B /* Main.storyboard */,
 				C7C883E91CC7338E00865C2B /* Assets.xcassets */,
 				C7C883EB1CC7338E00865C2B /* LaunchScreen.storyboard */,
@@ -224,7 +236,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7C883E51CC7338E00865C2B /* ViewController.swift in Sources */,
+				C7DD3FFC1CCA045D008BA09F /* LinkedIn.swift in Sources */,
+				C7DD3FF61CCA0443008BA09F /* Facebook.swift in Sources */,
+				C7DD3FFA1CCA0455008BA09F /* Gplus.swift in Sources */,
 				C7C883E31CC7338E00865C2B /* AppDelegate.swift in Sources */,
+				C7DD3FF81CCA044E008BA09F /* Twitter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

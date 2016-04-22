@@ -12,7 +12,6 @@ import TwitterKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
@@ -20,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // Added to handle the Authorization code returned from sign-in.
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        return true
 
         if LISDKCallbackHandler.shouldHandleUrl(url) {
             return LISDKCallbackHandler.application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
